@@ -113,9 +113,67 @@
 
 .google-map iframe {
     height: 70%;
-    width: 50%;
+    
     
     top: 0;
     position: absolute;
 }
 
+.check{
+    min-height: 80px;
+    padding: 20px;
+    
+}
+.query-info{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf8f8;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 15px;
+    transition: all 1s ease;
+  }
+  
+  .form-details{
+    width: 100%;
+    background-color: #d5d1d1
+    box-shadow: 0 0 20px #444547;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .form-textarea{
+    height: 160px;
+    background-color: #444547;
+  }
+  .form-heading{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+  
+  }
+  ::placeholder{
+    color: #616161;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .send-msg{
+    width: 200px;
+    height: 55px;
+    border: 2px solid #626865;
+    margin-left: 16px;
+    padding: 8px;
+    border-radius: 23px;
+    background-color: #089bf7;
+    color: white;
+    box-shadow: 0 0 20px #1e2e4e;
+    font-size: 22px;
+    
+  }
+  .send-msg:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #f4080c;
+  }
