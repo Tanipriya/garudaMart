@@ -372,18 +372,28 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!---->
    <script>
+
+
     function sendEmail(){
 
-    
-    
               Email.send({
                 Host : "smtp.elasticemail.com",
-                Username : "abhicoolest03@gmail.com",
-                Password : "7316CD31833306095743C856EDD73379D03C",
-                  To: "ucctanisha15@gmail.com",
-                  From: "abhicoolest03@gmail.com",
-                  Subject: "are jata kyo nahi hai tum",
-                  Body: "Aise Bhejte hai"
+                Username : "ucctanisha15@gmail.com",
+                Password : "1DAA55EAE7A2802B015B2C324FBB8699B946",
+                  To: "info@garudayaan.com",
+                  From: "ucctanisha15@gmail.com",
+                  Subject: "Request From " + document.getElementById("email").value,
+                  Body: "Name: " + document.getElementById("firstName").value   + document.getElementById("lastName").value
+                  + "<br> Contact Number: "+ document.getElementById("contactNumber").value +
+                  "<br> Pin Code: " + document.getElementById("pinCode").value 
+                  + "<br> Email ID: " + document.getElementById("email").value 
+                  + "<br> Height: " + document.getElementById("height").value
+                  + "<br> Width: " + document.getElementById("width").value
+                  + "<br> Length: " + document.getElementById("Length").value
+                  + "<br> Message: " + document.getElementById("message").value
+
+                 
+                 
               }).then(
                   msg => alert("The email successfully sent")
               );
