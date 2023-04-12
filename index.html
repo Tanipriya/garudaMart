@@ -106,22 +106,59 @@
                 </div>
 
                 
-<div class="extra row">
-    <div class="image1 ">
-        <img src="./assests/image/hp-1-map-1.jpg" >
-    </div>
-    <div class="image2 ">
-        <h1>Garuda Mart</h1>
-        <p>We offer a Global Logistics Network with our worldwide offices and
-             also high quality distribution<br> facilities which are staffed by dedicated teams of the top of experts.
-             <br>We have more than 10 years of experiences in this field.</p>
-        
-    </div>
-</div>
 
+    <div class="logistic-container">
+
+
+        <div class="logistic-details ">
+            <div class="serviceLogo-image">
                 
             </div>
+            <h4>
+                Full Container Load Services</h4>
+            <p>Lorem ipsum dolor sit amet elit consectetur adipiscing sed eiusmod tempor.</p>
+
         </div>
+        <div class="logistic-details ">
+            <div class="serviceLogo-image">
+                
+            </div>
+            <h4>Road Freighting <br> Services</h4>
+            <p>Lorem ipsum dolor sit amet elit consectetur adipiscing sed eiusmod tempor.</p>
+
+        </div>
+        <div class="logistic-details ">
+            <div class="serviceLogo-image">
+                
+            </div>
+            <h4>Movers & Packers <br> Services</h4>
+            <p>Lorem ipsum dolor sit amet elit consectetur adipiscing sed eiusmod tempor .</p>
+
+        </div>
+        <div class="logistic-details ">
+            <div class="serviceLogo-image">
+                
+            </div>
+            <h4>
+                Parcel Delivery <br>Services</h4>
+            <p>Lorem ipsum dolor sit amet elit consectetur adipiscing sed eiusmod tempor.</p>
+
+        </div>
+    </div>         
+            </div>
+        </div>
+
+<div class="extra row">
+        <div class="image1 ">
+            <img src="./assests/image/hp-1-map-1.jpg" >
+        </div>
+        <div class="image2 ">
+            <h1>Garuda Mart</h1>
+            <p>At GARUDAYAAN Top Logistics Company in Bangalore, we are dedicated to providing our clients with top-notch <br>logistics solutions. 
+                Our team of experienced professionals is committed to ensuring that your shipments<br> le your logistics needs.</p>
+            
+        </div>
+</div>
 
         <div class="features">
             <h1 class="features-heading">Our Core Features</h1>
@@ -187,7 +224,7 @@
                                     <div class="contact-name col-6">
 
                                         <div class="form-item">
-                                            <label for="" class="form-heading">First Name: </label><br>
+                                            <label for="firstName" class="form-heading">First Name: </label><br>
                                             <input type="text" id="firstName" class="form-details"
                                                 placeholder="Enter your First Name" required>
 
@@ -196,7 +233,7 @@
 
                                     <div class="contact-name col-6">
                                         <div class="form-item">
-                                            <label for="" class="form-heading">Last Name: </label><br>
+                                            <label for="lastName" class="form-heading">Last Name: </label><br>
                                             <input type="text" id="lastName" class="form-details"
                                                 placeholder="Enter your Last Name" required>
 
@@ -204,7 +241,7 @@
                                     </div>
                                     <div class="contact-name col-6">
                                         <div class="form-item">
-                                            <label for="" class="form-heading">Contact Number: </label><br>
+                                            <label for="contactNumber" class="form-heading">Contact Number: </label><br>
                                             <input type="number" id="contactNumber" class="form-details"
                                                 placeholder="Enter your Phone Number" required>
                                         </div>
@@ -212,7 +249,7 @@
 
                                     <div class="contact-name col-6">
                                         <div class="form-item">
-                                            <label for="" class="form-heading">Pin Code: </label><br>
+                                            <label for="pinCode" class="form-heading">Pin Code: </label><br>
                                             <input type="number" id="pinCode" class="form-details"
                                                 placeholder="Enter your Pin Code" required>
                                         </div>
@@ -220,7 +257,7 @@
 
                                     <div class="contact-name col-12">
                                         <div class="form-item">
-                                            <label for="" class="form-heading">Email: </label><br>
+                                            <label for="email" class="form-heading">Email: </label><br>
                                             <input type="email" id="email" class="form-details"
                                                 placeholder="Enter your Email ID" required>
 
@@ -229,7 +266,7 @@
 
                                     <div class="contact-name col-4">
                                         <div class="form-item">
-                                            <label for="" class="form-heading">Height: </label><br>
+                                            <label for="height" class="form-heading">Height: </label><br>
                                             <input type="text" id="height" class="form-details" placeholder="Height"
                                                 required>
                                         </div>
@@ -237,14 +274,14 @@
 
                                     <div class="contact-name col-4">
                                         <div class="form-item">
-                                            <label for="" class="form-heading">Width: </label><br>
+                                            <label for="width" class="form-heading">Width: </label><br>
                                             <input type="text" id="width" class="form-details" placeholder="Width"
                                                 required>
                                         </div>
                                     </div>
                                     <div class="contact-name col-4">
                                         <div class="form-item">
-                                            <label for="" class="form-heading">Length: </label><br>
+                                            <label for="Length" class="form-heading">Length: </label><br>
                                             <input type="text" id="Length" class="form-details" placeholder="Length"
                                                 required>
                                         </div>
@@ -253,7 +290,7 @@
                                     <div class="col-12">
                                         <div class="form-item">
 
-                                            <label for="" class="form-heading">Message: </label><br>
+                                            <label for="message" class="form-heading">Message: </label><br>
                                             <textarea class="col-12" id="message" placeholder="Enter your Message"
                                                 style="background-color: #fcf8f8; height: 160px;" required></textarea>
                                         </div>
@@ -331,21 +368,25 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!---->
-    <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "3d3ec73b-3e1b-4f97-8299-b4ea9efd683d",
-                To: "ucctanisha15@gmail.com",
-                From: document.getElementById("email"),
-                Subject: "Contact Us Query By the Customer",
-                Body: "this is body"
-            }).then(
-                msg => alert("The email successfully sent")
-            );
-        }
+   <script>
+    function sendEmail(){
 
-    </script>
-
+    
+    
+              Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "abhicoolest03@gmail.com",
+                Password : "7316CD31833306095743C856EDD73379D03C",
+                  To: "ucctanisha15@gmail.com",
+                  From: "abhicoolest03@gmail.com",
+                  Subject: "are jata kyo nahi hai tum",
+                  Body: "Aise Bhejte hai"
+              }).then(
+                  msg => alert("The email successfully sent")
+              );
+            }
+  
+   </script>
 </body>
 
 </html>

@@ -153,12 +153,13 @@
 .extra{
 background-color: white;
 margin: 100px;
-min-height: 100px;
+min-height: 200px;
 border-radius: 30px;
-padding: 20px;
-margin-bottom: 10px;
-position: relative;
+padding: 30px;
+margin-bottom: 50px;
 
+position: relative;
+box-shadow: 0 0 20px #444547;
 }
 .image2 h1{
     color: black;
@@ -228,6 +229,37 @@ position: relative;
     width: 140px;
 }
 
+.logistic-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.logistic-details{
+  height: 180px;
+  width: 320px;
+  background-color: #eef1e6;
+  box-shadow: #9d9a9a;
+  margin: 18px;
+  padding: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #444547;
+}
+.logistic-details h4{
+  font-size: 24px;
+  font-weight: bold;
+  color: #030303;
+}
+.logistic-details p{
+  font-size: 17px;
+font-style: oblique;
+  color: #172d20;
+}
 .core{
     min-height: 450px;
     width: 350px;
