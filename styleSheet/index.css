@@ -241,7 +241,7 @@ box-shadow: 0 0 20px #444547;
 .logistic-details{
   height: 180px;
   width: 320px;
-  background-color: #eef1e6;
+  background-color: #d9394c;
   box-shadow: #9d9a9a;
   margin: 18px;
   padding: 15px;
@@ -253,12 +253,14 @@ box-shadow: 0 0 20px #444547;
 .logistic-details h4{
   font-size: 24px;
   font-weight: bold;
-  color: #030303;
+  color: #fff;
+  text-align: center;
 }
 .logistic-details p{
   font-size: 17px;
 font-style: oblique;
-  color: #172d20;
+  color: #fff;
+  text-align: center;
 }
 .core{
     min-height: 450px;
